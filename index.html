@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/vendors/bootstrap.css">
+    <link rel="stylesheet" href="css/vendors/font-awesome.min.css">
+   <link rel="stylesheet" href="css/style.css">
+    <title>3ouletna Shop</title>
+</head>
+<body>
+    <header>
+      <div class="container">
+        <div class="row">
+            <i class="icon fa fa-bars fa-2x"></i>
+           <div class="col-md-3 col-xs-12">
+             <div class="logo">
+                <h2>3ouletna Shop</h2>
+             </div>
+           </div> 
+          <nav class="col-md-9 col-xs-12">
+           <ul class="nav-list">
+            <li class="list"><a href="#">superette</a></li>
+            <li class="list"><a href="#">cuisine </a></li>
+            <li class="list"><a href="#">electroménager</a></li>
+            <li class="list"><a href="#">Diari</a></li>
+            <li class="list"><a href="#">Patisserie</a></li>
+            <li class="logo fa fa-shopping-cart"><a href="#">panier 0</a></li>
+          </ul>
+      </div>
+
+    </header>
+
+    <section class="sections home text-center">
+        <div class="overlay">
+            <div class="container">
+              <div class="home-content">
+                <h3 class="home-title">Get Shop From Your Home</h3>
+              </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section about">
+        <div class="container">
+           <div class="section-header text-center">
+            <h2 class="section-title">Promo !!!</h2>
+            <div class="line"><span></span></div>
+           </div>
+           <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <div class="about-img">
+               <img src="image/img.jpg">
+               <p class="about-info"  ><h4>Falfoul Bonbon 14g</h4></p>
+               <p>price: 0.300 dt</p>
+               <button class="about-info-btn" id="Falfoul" onclick="Calcul(event)">Ajouter au panier</button>
+              </div>
+            </div>
+              <div class="col-md-3 col-xs-12">
+                <div class="about-img">
+                 <img src="image/fourre.jpg">
+                 <p class="about-info" ><h4>Fourre</h4></p>
+                 <p>price: 2 dt</p>
+                 <button class="about-info-btn" id="Fourre" onclick="Calcul(event)">Ajouter au panier</button>
+                </div>
+              </div>
+                <div class="col-md-3 col-xs-12">
+                  <div class="about-img">
+                   <img src="image/binto.jpg">
+                   <p class="about-info" ><h4>Binto</h4></p>
+                   <p>price: 2 dt</p>
+                   <button class="about-info-btn" id="Binto" onclick="Calcul(event)">Ajouter au panier</button>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <div class="about-img">
+                   <img src="image/sablito.jpg">
+                   <p class="about-info" ><h4>Sablito</h4></p>
+                   <p>price: 2 dt</p>
+                   <button class="about-info-btn" id="Sablito" onclick="Calcul(event)">Ajouter au panier</button>
+                  </div>
+                </div>
+           </div>
+           
+           <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <div class="about-img">
+               <img src="image/tomates.jpg">
+               <p class="about-info" ><h4>Sicam tomates</h4></p>
+               <p>price: 4.3 dt</p>
+               <button class="about-info-btn"  id="tomates"onclick="Calcul(event)">Ajouter au panier</button>
+              </div>
+            </div>
+              <div class="col-md-3 col-xs-12">
+                <div class="about-img">
+                 <img src="image/tomates1.jpg">
+                 <p class="about-info" ><h4>Tomates pelées cubées</h4></p>
+                 <p>price:  5dt</p>
+                 <button class="about-info-btn" id="tomates cubées" onclick="Calcul(event)">Ajouter au panier</button>
+                </div>
+              </div>
+                <div class="col-md-3 col-xs-12">
+                  <div class="about-img">
+                   <img src="image/saucepizza.jpg">
+                   <p class="about-info" ><h4>Sauce Pizza</h4></p>
+                   <p>price: 3.5 dt</p>
+                   <button class="about-info-btn" id="sauce pizza" onclick="Calcul(event)">Ajouter au panier</button>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <div class="about-img">
+                   <img src="image/harisa.jpg">
+                   <p class="about-info" ><h4>Concentré Harissa</h4></p>
+                   <p>price: 2 dt</p>
+                   <button class="about-info-btn"  id="harissa" onclick="Calcul(event)">Ajouter au panier</button>
+                  </div>
+                </div>
+           </div>
+           <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <div class="about-img">
+               <img src="image/warda0.jpg">
+               <p class="about-info" ><h4>Long penne</h4></p>
+               <p>price: 0.500 dt</p>
+               <button class="about-info-btn" id="long penne" onclick="Calcul(event)">Ajouter au panier</button>
+              </div>
+            </div>
+              <div class="col-md-3 col-xs-12">
+                <div class="about-img">
+                 <img src="image/lasagna.jpg">
+                 <p class="about-info" ><h4>cannelloni</h4></p>
+                 <p>price:  1dt</p>
+                 <button class="about-info-btn" id="cannelloni" onclick="Calcul(event)">Ajouter au panier</button>
+                </div>
+              </div>
+                <div class="col-md-3 col-xs-12">
+                  <div class="about-img">
+                   <img src="image/lasagne.jpg">
+                   <p class="about-info" ><h4>lasagne</h4></p>
+                   <p>price: 1 dt</p>
+                   <button class="about-info-btn" id="lasagne" onclick="Calcul(event)">Ajouter au panier</button>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <div class="about-img">
+                   <img src="image/warda.jpg">
+                   <p class="about-info" ><h4>Tagliatelle 2</h4></p>
+                   <p>price: 2 dt</p>
+                   <button class="about-info-btn" id="Tagliatelle" onclick="Calcul(event)">Ajouter au panier</button>
+                  </div>
+                </div>
+           </div>
+              
+            </div>
+            
+          </div>
+        </div>
+    </section>
+
+    <section class="section services">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Our Services</h2>
+          <div class="line"><span></span></div>
+         </div>
+         <div class="row">
+          <div class="col-md-4 col-xs-12">
+            <div class="serv">
+              <i class="icon fa fa-user-circle fa-lg"></i>
+              <h3 class="serv-title">A propos de nous</h3>
+              <p class="serv-desc"> 3ouletne Shop est un site de vente en ligne des produits 100% Tunisiens à des prix imbattables.</p>
+              
+            </div>
+          </div>
+
+          <div class="col-md-4 col-xs-12">
+            <div class="serv">
+              <i class="icon fa fa-address-book-o fa-lg"></i>
+              <h3 class="serv-title">Cantacter-nous</h3>
+              <p class="serv-desc">Email: contact@3ouletnaShop.com</p>
+              
+            </div>
+          </div>
+
+          <div class="col-md-4 col-xs-12">
+            <div class="serv">
+              <i class="icon fa fa-truck fa-lg"></i>
+              <h3 class="serv-title">Livraison</h3>
+              <p class="serv-desc">Le client a le choix entre deux modes de livraison : Livraison a domicile</p>
+              
+            </div>
+          </div>
+         </div>
+         </div>
+      </div>
+    </section>
+
+
+    <div class="text"></div>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

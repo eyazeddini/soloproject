@@ -1,0 +1,233 @@
+body{
+    font-family: Lucida sans;
+}
+
+.sections{
+    padding: 20px 0;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+header{
+    height: auto;
+    padding: 10px 0;
+    border-bottom: 1px  #000;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+
+}
+
+header i.icon{
+    position: absolute;
+    right: 30px;
+    top: 32px;
+    z-index: 10;
+    display: none;
+}
+
+header .logo h2{
+    font-size: 35px;
+    color: #fff;
+     
+}
+
+header nav .nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+header nav .nav-list .logo{
+    background: #7cb62f;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+header nav .nav-list .counter{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+
+header nav .nav-list .list a{
+    display: block;
+    padding: 15px;
+    margin: 9px 0;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    color:#fff;
+}
+
+header nav .nav-list .list a:hover{
+    color: #7cb62f;
+}
+
+.sticky{
+    background-color: #000;
+    color: #fff;
+}
+
+@media (max-width:575px){
+    
+    header{
+        background: #000;
+      }
+
+    header nav .nav-list{
+        display: none;
+        text-align:center ;
+        padding: 0;
+    }
+
+    header .logo{
+        text-align: center;
+    }
+
+    header i.icon{
+        display: block;
+    }
+
+    .section-header p{
+        width: 85%;
+    }
+}
+
+.home{
+    height: 500px;
+    background-image: url('../image/images.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.home .home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home .home-title{
+    color:#fff;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+
+
+@media (max-width:575px){
+    .home .home-title{
+        font-size: 22px;
+    }
+
+}
+
+.section-header .section-title{
+    font-size: 40px;
+}
+
+.section-header .line{
+    width: 150px;
+    background: #ddd;
+    height: 3px;
+    margin: auto;
+}
+
+.section-header .line span{
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #7cb62f;
+    margin: auto;
+    position: relative;
+    bottom: 0.5px;
+}
+
+
+.about .about-info h3{
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+
+.about .about-info-btn{
+     background-color: #7cb62f;
+     padding: 10px 20px;
+     border: 0;
+     color: #fff;
+     font-weight: bold;
+     margin-bottom: 15px;
+}
+
+.about .about-img img{
+    width: 70%;
+
+}
+
+@media (max-width:575px){
+    .about .about-info h3{
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width:576px) and (max-width:768px){
+    .about .about-info{
+        text-align: center;
+    }
+
+}
+
+.services{
+    background: #f7f7;
+}
+
+.services .serv{
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services .serv .icon{
+    background: #7cb62f;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.services .serv-title{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+
+}
+
+.services .serv-desc{
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 20px;
+
+}
+
+
+.text{
+    margin-bottom: 400px;
+}
